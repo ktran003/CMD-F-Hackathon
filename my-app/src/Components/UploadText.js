@@ -31,6 +31,7 @@ export default class UploadText extends React.Component {
     }
 
     CohereSummary(textToSummarize) {
+      console.log('CohereSummaryCohereSummaryCohereSummaryCohereSummary')
         console.log(textToSummarize);
         let options = {
             method: 'POST',
