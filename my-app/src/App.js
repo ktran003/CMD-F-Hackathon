@@ -2,7 +2,7 @@ import './App.css';
 import MyFriends from './pages/MyFriends';
 import MyGarden from './pages/MyGarden';
 import Home from './pages/Home';
-import CohereSummary from './Components/CohereSummary';
+import UploadText from './Components/UploadText';
 import NavBar from './Components/NavBar';
 
 function App() {
@@ -17,6 +17,8 @@ function App() {
     case "/garden":
       Component = MyGarden
       break
+    default:
+      Component = Home
   }
   return (
     <>
@@ -24,7 +26,7 @@ function App() {
     <div className="App">
     <div className= "container">{Component}</div>
     <Component/>
-    <CohereSummary/>
+    <UploadText/>
     </div>
     </>
 
