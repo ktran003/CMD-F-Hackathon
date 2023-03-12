@@ -8,6 +8,7 @@ export default function TextSummarizer() {
         <h1>TextSummarizer</h1>
     <div>
         <UploadText></UploadText>
+        
     </div>
     </div>
     )
