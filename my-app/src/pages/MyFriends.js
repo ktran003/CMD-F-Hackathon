@@ -1,5 +1,5 @@
 import React from "react"
 
 export default function MyFriends() {
-    return <h1>MyFriends</h1>
+    return <h1>this page is still under construction</h1>
 }
