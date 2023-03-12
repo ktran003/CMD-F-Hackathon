@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+.uploadText h3 {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    right: 30%;
+}
+
+.uploadText textarea {
+    background-color: #faf3dd;
+    border: none;
+    display: block;
+    margin: 10px auto;
+    border-radius: 20px;
+    height: 250px;
+    width: 80%;
+    padding: 30px;
+    resize: none;
+    font-size: 16px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.summarize {
+    background-color: #4a7c59;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 2px darkgrey;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    position: relative;
+    left: 35%;
+}
