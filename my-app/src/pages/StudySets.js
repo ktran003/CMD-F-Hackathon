@@ -5,9 +5,9 @@ import './StudySets.css'
 export const StudySets = () => {
     return (
     <div className="study">
-        <h1>MY STUDY SETS</h1>
+        <h1>MY STUDY SET</h1>
         <div className="className">
-            <h3>Class</h3>
+            <h3>Class:</h3>
             <p>Add a description:</p>
         </div>
         <h2>STUDY Cards</h2>

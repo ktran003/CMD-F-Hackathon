@@ -8,6 +8,7 @@ export default class UploadText extends React.Component {
     constructor(props) {
       super(props);
       this.state = {value: '', out: '...', question: '... Generating Questions ...'};
+
   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -96,7 +97,8 @@ export default class UploadText extends React.Component {
             // truncate: 'END',
             k: 0,
             p: 0.75,
-            prompt: 'Give me a numbered list of five questions about the following passage:' + textToQuiz
+            prompt: 'Give me a numbered list of three questions about the following passage:' + textToQuiz
+
           }
         };
 
@@ -134,7 +136,6 @@ export default class UploadText extends React.Component {
 
             </div>
           </div>
-        
         </div>
       );
     }
