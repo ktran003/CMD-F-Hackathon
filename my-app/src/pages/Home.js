@@ -2,17 +2,18 @@ import TextSummarizer from "./TextSummarizer"
 import React from "react"
 import { Link } from "react-router-dom"
 // import './pages/Home.css';
+import './Home.css';
 
  export const Home = () => {
     return (
-    <div>
+    <div class="home">
         <div class="rectangle"></div>
         <ul>
-            <button>CHECK TIMER</button>
+            <button class="timerButton">CHECK TIMER</button>
         </ul>
         <Link to="/studysets">
-         <button>
-            CREATE A STUDY SET
+         <button class="moreButton">
+            VIEW MORE
          </button>
         </Link>
     </div>
