@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+
 .cohere-div {
     background-color: #faf3dd;
-    border-radius: 30px;
-    height: 200px;
-    width: 80%;
+    border: none;
+    display: block;
     margin: 10px auto;
+    border-radius: 20px;
+    height: 250px;
+    width: 80%;
+    padding: 30px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
 }

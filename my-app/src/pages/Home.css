@@ -1,0 +1,15 @@
+.home {
+    background-color: #c8d5b9;
+}
+
+.home button {
+    background-color: #caad7e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px auto;
+    font-size: 12px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 2px darkgrey;
+}
