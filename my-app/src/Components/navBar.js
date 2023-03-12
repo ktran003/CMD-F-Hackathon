@@ -4,20 +4,19 @@ import { Link } from 'react-router-dom'
 import './NavBar.css'
 
 function NavBar(){
-    const path = window.location.pathname
   return (
     <header className= "header">
     <div className = "logo">
         </div>
         <nav> 
             <ul>
+                <div className="grid-container">
+                    <li><Link className= "TIMER" to='/timer'>TIMER</Link></li>
+                    <li><Link className= "HOME" to='/home'>HOME</Link></li>
+                    <li><Link className= "MY FRIENDS" to='/myfriends'>MY FRIENDS</Link></li>
+                    <li><Link className= "MY GARDEN" to='mygarden'>MY GARDEN</Link></li>
 
-                <li>
-                    <a href="/timer" className>TIMER</a>
-                </li>
-                <CustomLink href="/home">HOME</CustomLink>
-                <CustomLink href="/garden">MY GARDEN</CustomLink>
-                <CustomLink href="/friends">MY FRIENDS</CustomLink>
+                </div>
             </ul>
         </nav>
         <div>
@@ -26,13 +25,13 @@ function NavBar(){
   )
 }
 
-function CustomLink ({href, children, ...props}) {
-    const path = window.location.pathname
-    return (
-    <li className= {path === href ? "active" : ""}>
-        <a href={href} {...props}>{children}</a>
-    </li>
-    )
-}
+// function CustomLink ({to, children, ...props}) {
+//     const path = window.location.pathname
+//     return (
+//     <li className= {path === to ? "active" : ""}>
+//         <Link to={to} {...props}>{children}</Link>
+//     </li>
+//     )
+// }
 
 export default NavBar

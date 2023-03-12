@@ -1,9 +1,14 @@
-// import UploadText from './Components/UploadText';
+import React from "react"
+import UploadText from "../Components/UploadText"
+
 
 export default function TextSummarizer() {
-    return 
-    // <>
-    // <h1>TextSummarizer</h1>
-    // <UploadText/>
-    // </>
+    return (
+    <div>
+        <h1>TextSummarizer</h1>
+    <div>
+        <UploadText></UploadText>
+    </div>
+    </div>
+    )
 }

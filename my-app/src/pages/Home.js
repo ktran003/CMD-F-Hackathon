@@ -1,24 +1,17 @@
 import TextSummarizer from "./TextSummarizer"
+import React from "react"
+import { Link } from "react-router-dom"
 
- export default function Home() {
-    // let Component 
-    // switch (window.location.pathname) {
-    //   case "/textsummarizer":
-    //     Component = TextSummarizer
-    //     break
-    // }
-    return 
+ export const Home = () => {
+    return (
     <div>
-    <h1>Home</h1>
-        {/* <CustomLink href="/textsummarizer">HOME</CustomLink> */}
+        <Link to="/studysets">
+         <button>
+            Button
+         </button>
+        </Link>
     </div>
+    )
 }
 
-// function CustomLink ({href, children, ...props}) {
-//     const path = window.location.pathname
-//     return (
-//     <li className= {path === href ? "active" : ""}>
-//         <a href={href} {...props}>{children}</a>
-//     </li>
-//     )
-// }
+export default Home
