@@ -4,7 +4,7 @@ import './StudySets.css'
 
 export const StudySets = () => {
     return (
-    <div>
+    <div className="study">
         <h1>MY STUDY SETS</h1>
         <h2>MY STUDY SETS</h2>
         <h3> name class date created</h3>
