@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import CohereSummary from './Components/CohereSummary';
+// import CohereSummary from './Components/CohereSummary';
+import UploadText from './Components/UploadText';
 
 function App() {
   return (
-    <CohereSummary />
+    <div>
+     {/* <CohereSummary /> */}
+    <UploadText />
+    </div>
   );
 }
 
