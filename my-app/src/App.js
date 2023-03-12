@@ -24,7 +24,7 @@ function App() {
     <div className="App">
     <div className= "container">{Component}</div>
     <Component/>
-    <CohereSummary />
+    <CohereSummary/>
     </div>
     </>
 
