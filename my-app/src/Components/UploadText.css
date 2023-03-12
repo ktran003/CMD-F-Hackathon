@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+#input {
+    background-color: #faf3dd;
+    border: none;
+    display: block;
+    margin: 5px auto;
+    border-radius: 20px;
+    height: 250px;
+    width: 80%;
+    padding: 30px;
+}
+
+textarea {
+    resize: none;
+}
+
+h3 {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    right: 33%;
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#summarize {
+    background-color: #4a7c59;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 2px darkgrey;
+    position: relative;
+    right: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 34%;
+    margin: 10px;
+}

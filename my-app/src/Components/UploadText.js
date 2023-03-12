@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './UploadText.css'
 
 // import CohereSummary from './CohereSummary2Verygood';
 
@@ -70,10 +71,10 @@ export default class UploadText extends React.Component {
         <div>
         <form onSubmit={this.handleSubmit}>
           <label>
-            Enter text to summarize:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
+            <h3>Make A study set</h3>
+            <textarea id="input" rows="4" cols="40" value={this.state.value} onChange={this.handleChange} placeholder="type here..."></textarea>
           </label>
-          <input type="submit" value="Submit" />
+          <input id="summarize" type="submit" value="Summarize text" />
         </form>
         <div className="cohere-div">
             {this.state.out}
