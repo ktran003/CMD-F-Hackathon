@@ -1,16 +1,15 @@
 import './App.css';
 
 import CohereSummary from './Components/CohereSummary';
-import navBar from './Components/navBar';
+import NavBar from './Components/NavBar';
 
 function App() {
   return (
    <div className="App">
     <CohereSummary />
-    <navBar></navBar>
+    <NavBar/>
     </div>
 
   );
 }
-
 export default App;

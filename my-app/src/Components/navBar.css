@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0 auto;
+    background-color: #FAF3DD;
+    display: flex;
+    justify-content: space-between;
+    padding: 20 px 8%
+}
