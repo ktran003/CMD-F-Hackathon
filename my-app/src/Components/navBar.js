@@ -1,6 +1,7 @@
 import React from 'react'
+import './navBar.css'
+import { Link } from 'react-router-dom'
 import './NavBar.css'
-
 
 function NavBar(){
     const path = window.location.pathname
@@ -10,6 +11,7 @@ function NavBar(){
         </div>
         <nav> 
             <ul>
+
                 <li>
                     <a href="/timer" className>TIMER</a>
                 </li>
