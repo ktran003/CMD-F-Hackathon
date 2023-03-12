@@ -7,7 +7,8 @@ import './UploadText.css';
 export default class UploadText extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {value: '', out: '', question: ''};
+      this.state = {value: '', out: '...', question: '... Generating Questions ...'};
+
   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -96,7 +97,8 @@ export default class UploadText extends React.Component {
             // truncate: 'END',
             k: 0,
             p: 0.75,
-            prompt: 'Give me three questions about the following passage:' + textToQuiz
+            prompt: 'Give me a numbered list of three questions about the following passage:' + textToQuiz
+
           }
         };
 
@@ -125,9 +127,15 @@ export default class UploadText extends React.Component {
         <div className="cohere-div">
             {this.state.out}
         </div>
-        <div>
-            {'this is a question from pomo: ' + this.state.question}
-        </div>
+        <div className = "questionsList-div"> 
+            <label>
+              <h3> Here are questions that Pomo has generated for you: </h3>
+            </label>
+            <div className="question-div">
+              {this.state.question}
+
+            </div>
+          </div>
         </div>
       );
     }
