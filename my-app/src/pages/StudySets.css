@@ -2,6 +2,7 @@
 
 .study {
     font-family: 'Lato', sans-serif;
+    padding: 20px;
   }
 
 .study h1 {
@@ -27,7 +28,7 @@
   width: 80%;
   padding: 30px;
   font-size: 16px;
-  color: black;
+  color: #caad7e;
   text-align: left;
 }
 

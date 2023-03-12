@@ -1,15 +1,114 @@
 .home {
-    background-color: #c8d5b9;
+    background-color: #faf3dd;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
-.home button {
+.titleArea {
+    background-color: #c8d5b9;
+    border-radius: 0 150px 150px 150px;
+    height: 400px;
+    width: 100%;
+    margin: 0 0 50px 0;
+    padding: 40px;
+}
+
+.titleArea h1 {
+    font-size: 70px;
+    color: #4a7c59;
+    text-transform: uppercase;
+}
+
+.titleArea p {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.timerArea {
+    background-color: #4a7c59;
+    border-radius: 150px 0 0 150px;
+    height: 250px;
+    width: 80%;
+    padding: 30px;
+    margin: 0 0 50px auto;
+    float: right;
+}
+
+.timerArea button {
     background-color: #caad7e;
     border: none;
     border-radius: 5px;
-    color: white;
-    padding: 5px 10px;
-    margin: 10px auto;
-    font-size: 12px;
+    color: #4a7c59;
+    padding: 5px 20px;
+    margin: auto;
+    font-size: 16px;
     text-transform: uppercase;
-    box-shadow: 1px 1px 2px darkgrey;
+    box-shadow: 1px 1px 2px black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.studyArea {
+    background-color: #caad7e;
+    border-radius: 0 150px 150px 0;
+    height: 250px;
+    width: 80%;
+    padding: 30px;
+    margin: 0 auto 50px 0;
+    float: left;
+}
+
+.studyArea button {
+    background-color: #faf3dd;
+    border: none;
+    border-radius: 5px;
+    color: #4a7c59;
+    padding: 5px 20px;
+    margin: 30px auto 5px auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 2px darkgray;
+    margin-bottom: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.studyArea hr {
+    border-color: black;
+    width: 80%;
+    margin: auto;
+}
+
+.home hr {
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+
+.chatArea {
+    background-color: #c8d5b9;
+    border-radius: 20px;
+    height: 200px;
+    width: 50%;
+    padding: 30px;
+    margin: 50px auto;
+}
+
+.chatArea button {
+    background: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.chatArea .bigButton {
+    display: block;
+    margin: auto;
+    color: black;
+    font-size: 130px;
+    font-weight: bold;
 }
