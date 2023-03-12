@@ -3,7 +3,7 @@ import MyFriends from './pages/MyFriends';
 import MyGarden from './pages/MyGarden';
 import Home from './pages/Home';
 import CohereSummary from './Components/CohereSummary';
-import NavBar from './Components/navBar';
+import NavBar from './Components/NavBar';
 
 function App() {
   let Component 
