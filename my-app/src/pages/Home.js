@@ -15,6 +15,11 @@ import { Link } from "react-router-dom"
             CREATE A STUDY SET
          </button>
         </Link>
+        <Link to="/chatbox">
+         <button>
+            STUDY WITH POMO
+         </button>
+        </Link>
     </div>
     )
 }
