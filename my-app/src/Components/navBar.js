@@ -1,9 +1,38 @@
 import React from 'react'
+// import './navBar.css'
+import { Link } from 'react-router-dom'
+import './NavBar.css'
 
-function navBar() {
+function NavBar(){
+    const path = window.location.pathname
   return (
-    <div>navBar</div>
+    <header className= "header">
+    <div className = "logo">
+        </div>
+        <nav> 
+            <ul>
+
+                <li>
+                    <a href="/timer" className>TIMER</a>
+                </li>
+                <CustomLink href="/home">HOME</CustomLink>
+                <CustomLink href="/garden">MY GARDEN</CustomLink>
+                <CustomLink href="/friends">MY FRIENDS</CustomLink>
+            </ul>
+        </nav>
+        <div>
+    </div>
+    </header>
   )
 }
 
-export default navBar
+function CustomLink ({href, children, ...props}) {
+    const path = window.location.pathname
+    return (
+    <li className= {path === href ? "active" : ""}>
+        <a href={href} {...props}>{children}</a>
+    </li>
+    )
+}
+
+export default NavBar
