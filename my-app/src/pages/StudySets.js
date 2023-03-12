@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import React from "react"
+import './page/StudySets'
 
 export const StudySets = () => {
     return (
