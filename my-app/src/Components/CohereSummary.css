@@ -12,3 +12,38 @@
     color: black;
     font-family: 'Cormorant Garamond', serif;
 }
+
+.question-div {
+    background-color: #faf3dd;
+    border: none;
+    display: block;
+    margin: 10px auto;
+    border-radius: 20px;
+    height: 250px;
+    width: 80%;
+    padding: 30px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15;
+    padding-top: 20px
+
+}
+
+.questionsList-div {
+    border: none;
+    display: block;
+    margin: 100px auto;
+    border-radius: 20px;
+    height: 250px;
+    width: 80%;
+    padding: 30px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 20px;
+    justify-content: center
+}
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
