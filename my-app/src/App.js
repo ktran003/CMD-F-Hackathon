@@ -19,12 +19,16 @@ function App() {
       break
   }
   return (
-   <div className="App">
+    <>
     <NavBar/>
+    <div className="App">
+    <div className= "container">{Component}</div>
     <Component/>
     <CohereSummary />
     </div>
+    </>
 
   );
 }
 export default App;
+
