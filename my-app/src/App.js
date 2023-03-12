@@ -5,10 +5,14 @@ import UploadText from './Components/UploadText';
 
 function App() {
   return (
+   <div className="App">
     <div>
      {/* <CohereSummary /> */}
     <UploadText />
     </div>
+    <navBar></navBar>
+    </div>
+
   );
 }
 
