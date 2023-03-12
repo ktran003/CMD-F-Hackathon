@@ -6,8 +6,8 @@ import NavBar from './Components/navBar';
 function App() {
   return (
    <div className="App">
-    <CohereSummary />
     <NavBar/>
+    <CohereSummary />
     </div>
 
   );
