@@ -10,6 +10,7 @@ import UploadText from './Components/UploadText';
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import TextSummarizer from './pages/TextSummarizer';
 import StudySets from './pages/StudySets';
+import Chatbox from './pages/Chatbox';
 
 function App() {   
   return (
@@ -21,8 +22,9 @@ function App() {
             <Route exact path='/home' element={<Home/>}></Route>
             <Route exact path='/myfriends' element={<MyFriends/>}></Route>
             <Route exact path='/mygarden' element={<MyGarden/>}></Route>
-            <Route exact path='/textsummarizer' element={<TextSummarizer/>}></Route>T
+            <Route exact path='/textsummarizer' element={<TextSummarizer/>}></Route>
             <Route exact path='/studysets' element={<StudySets/>}></Route>
+            <Route exact path='/chatbox' element={<Chatbox/>}></Route>
         </Routes>
       {/* </BrowserRouter> */}
     </div>

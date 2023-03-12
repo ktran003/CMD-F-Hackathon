@@ -16,6 +16,11 @@ import './Home.css';
             VIEW MORE
          </button>
         </Link>
+        <Link to="/chatbox">
+         <button>
+            STUDY WITH POMO
+         </button>
+        </Link>
     </div>
     )
 }
