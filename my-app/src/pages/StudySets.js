@@ -6,14 +6,21 @@ export const StudySets = () => {
     return (
     <div className="study">
         <h1>MY STUDY SETS</h1>
-        <h2>MY STUDY SETS</h2>
-        <h3> name class date created</h3>
-        <p>Human Anatomy           BIO 193                 03/12/2023</p>
-        <p>World War 1             HIST 235                03/08/2023</p>
-        <p>East Asia               GEOG 121                03/08/2023</p>
+        <div className="className">
+            <h3>Class</h3>
+            <p>Add a description:</p>
+        </div>
+        <h2>STUDY Cards</h2>
+        <div className="studyContainer">
+            <div>Add new study card <button>+</button></div>
+            <div>Add new study card <button>+</button></div>
+            <div>Add new study card <button>+</button></div>
+            <div>Add new study card <button>+</button></div>
+            <div>Add new study card <button>+</button></div>
+        </div>
         <Link to="/textsummarizer">
          <button>
-            MAKE NEW STUDY SET
+            MAKE NEW STUDY SET  +
          </button>
         </Link>
     </div>

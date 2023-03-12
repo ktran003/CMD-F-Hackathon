@@ -1,17 +1,79 @@
-.StudySets {
-    text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+.study {
+    font-family: 'Lato', sans-serif;
   }
+
+.study h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 20px;
+}
+
+.study h2 {
+  color: black;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 130px;
+  font-size: 20px;
+}
+
+.className {
+  background-color: #faf3dd;
+  margin: 10px auto;
+  border-radius: 20px;
+  height: 150px;
+  width: 80%;
+  padding: 30px;
+  font-size: 16px;
+  color: black;
+  text-align: left;
+}
+
+.className h3 {
+  text-transform: uppercase;
+}
 
 pre { overflow-x: auto; }
 
 .study button {
-  background-color: #caad7e;
+  background: none;
   border: none;
-  border-radius: 5px;
-  color: white;
+  color: black;
   padding: 5px 10px;
   margin: 10px auto;
   font-size: 12px;
-  text-transform: uppercase;
-  box-shadow: 1px 1px 2px darkgrey;
+  font-weight: bold;
+}
+
+.study button:hover {
+  border: 1px solid white;
+}
+
+.studyContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 5px auto;
+}
+
+.studyContainer div {
+  text-align: left;
+  background-color: #faf3dd;
+  border-radius: 15px;
+  width: 80%;
+  height: 50px;
+  padding: 5px;
+  margin: 5px auto;
+  font-size: 14px;
+}
+
+.studyContainer button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 50%;
+  position: relative;
+
 }
