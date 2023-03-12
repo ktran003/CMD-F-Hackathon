@@ -12,7 +12,7 @@ import { Link } from "react-router-dom"
         </ul>
         <Link to="/studysets">
          <button>
-            VIEW MORE
+            CREATE A STUDY SET
          </button>
         </Link>
     </div>
