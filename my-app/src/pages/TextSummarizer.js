@@ -1,6 +1,6 @@
 import React from "react"
 import UploadText from "../Components/UploadText"
-import './pages/TextSummarizer'
+// import './pages/TextSummarizer'
 
 export default function TextSummarizer() {
     return (

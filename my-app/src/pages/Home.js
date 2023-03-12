@@ -1,7 +1,7 @@
 import TextSummarizer from "./TextSummarizer"
 import React from "react"
 import { Link } from "react-router-dom"
-import './pages/Home.css';
+// import './pages/Home.css';
 
  export const Home = () => {
     return (
