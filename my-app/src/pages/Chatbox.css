@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.className {
+    background-color: #faf3dd;
+    margin: 10px auto;
+    border-radius: 20px;
+    height: 500px;
+    width: 80%;
+    padding: 30px;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+  }
+
+  .POMO h3 {
+    margin-bottom: 5px;
+  }
+  .pomotext ul {
+    text-align: left;
+    background-color: #ADD8E6;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: 300px;
+    font-size: 14px;
+    box-shadow: 1px 1px 2px darkgrey;
+  }
+  .pomotext p {
+    text-align: left;
+    background-color: #ADD8E6;
+    width: 320px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 5px;
+  }
+  .pomotext p1 {
+    text-align: left;
+    background-color: #ADD8E6;
+    width: 320px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 5px;
+  }
+
+  .user ul {
+    text-align: right;
+    background-color: #ADD8E6;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: 300px;
+    font-size: 14px;
+    box-shadow: 1px 1px 2px darkgrey;
+  }
+  .user p {
+    text-align: right;
+    background-color: white;
+    width: 160px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-left: 595px;
+  }
+  .user h3 {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+
+  .user p1 {
+    text-align: right;
+    background-color: white;
+    width: 160px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin-left: 725px;
+  }
+
+  .textBox {
+    /* margin-top: 145px; */
+    width: 675px;
+    height: 35px;
+  }
+  .button {
+    width: 40px;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .container {
+    margin-top: 145px;
+    display: flex;
+    height: 35px;
+  } 

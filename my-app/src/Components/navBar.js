@@ -11,6 +11,7 @@ function NavBar(){
         <nav> 
             <ul>
                 <div className="grid-container">
+                    <li><Link className= "pomo-logo" to='/home'>POMO'S PARADISE</Link></li>
                     <li><Link className= "TIMER" to='/timer'>TIMER</Link></li>
                     <li><Link className= "HOME" to='/home'>HOME</Link></li>
                     <li><Link className= "MY FRIENDS" to='/myfriends'>MY FRIENDS</Link></li>
