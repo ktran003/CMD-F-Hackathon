@@ -6,13 +6,15 @@ import axios from 'axios';
 export default class UploadText extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {value: '', out: ''};
+      this.state = {value: '', out: '', question: ''};
   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
       this.CohereSummary = this.CohereSummary.bind(this);
       this.updateSummary = this.updateSummary.bind(this);
+      this.updateQuestionGenerator = this.updateQuestionGenerator.bind(this);
     }
+
   
     handleChange(event) {
       this.setState({value: event.target.value});
@@ -22,6 +24,7 @@ export default class UploadText extends React.Component {
         event.preventDefault();
         console.log("hello")
         this.CohereSummary(this.state.value);
+        this.CohereQuestionGenerator(this.state.value);
         // alert('A name was submitted: ' + this.state.value);
     }
 
@@ -29,6 +32,8 @@ export default class UploadText extends React.Component {
         this.setState({out: response.data.summary});
         console.log(response.data.summary);
     }
+
+    
 
     CohereSummary(textToSummarize) {
         console.log(textToSummarize);
@@ -64,6 +69,44 @@ export default class UploadText extends React.Component {
             });
             
     }
+
+    updateQuestionGenerator = (response) => {
+        this.setState({question: response.data.generations[0].text});
+    }
+
+    CohereQuestionGenerator(textToQuiz) {
+        let queryOptions = {
+            method: 'POST',
+            url: 'https://api.cohere.ai/v1/generate',
+            headers: {
+              accept: 'application/json',
+              'content-type': 'application/json',
+              authorization: 'Bearer GpzUxj94voFnVUxKgbWQooaXdXOd7N2sgkqKMTfj'
+            },
+            data: {
+                model: 'command-xlarge-nightly',
+              temperature: 0.75,
+              max_tokens: 150,
+              stop_sequences: [],
+              return_likelihoods: 'NONE',
+              // truncate: 'END',
+              k: 0,
+              p: 0.75,
+              prompt: 'Give me a question about the following passage:' + textToQuiz
+            }
+          };
+
+        axios
+            .request(queryOptions)
+            .then(this.updateQuestionGenerator
+                // console.log('Question 1: ' + response.data.generations[0].text);
+                // console.log('Question 2: ' + response.data.generations[1].text);
+                // console.log('Question 3: ' + response.data.generations[2].text);
+            )
+            .catch(function (error) {
+                console.error(error);
+            });
+    }
   
     render() {
       return (
@@ -77,6 +120,9 @@ export default class UploadText extends React.Component {
         </form>
         <div className="cohere-div">
             {this.state.out}
+        </div>
+        <div>
+            {'this is a question from pomo: ' + this.state.question}
         </div>
         </div>
       );
