@@ -17,15 +17,15 @@ import './Home.css';
         <div className="studyArea">
             <h3>my study sets</h3>
             <hr></hr>
-            <pre>name     class      date creates</pre>
-            <pre>name     class      date creates</pre>
-            <pre>name     class      date creates</pre>
-            <pre>name     class      date creates</pre>
-            <pre>name     class      date creates</pre>
-            <pre>name     class      date creates</pre>
+            <pre>name     class      date created</pre>
+            <pre>name     class      date created</pre>
+            <pre>name     class      date created</pre>
+            <pre>name     class      date created</pre>
+            <pre>name     class      date created</pre>
+            <pre>name     class      date created</pre>
             <Link to="/studysets">
             <button class="moreButton">
-                VIEW MORE
+                MAKE MORE
             </button>
             </Link>
         </div>
