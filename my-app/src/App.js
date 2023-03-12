@@ -1,7 +1,7 @@
 import './App.css';
 
 import CohereSummary from './Components/CohereSummary';
-import NavBar from './Components/NavBar';
+import NavBar from './Components/navBar';
 
 function App() {
   return (

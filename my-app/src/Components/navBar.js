@@ -1,5 +1,5 @@
 import React from 'react'
-import './NavBar.css'
+import './navBar.css'
 import { Link } from 'react-router-dom'
 
 function NavBar(){
@@ -9,9 +9,9 @@ function NavBar(){
         </div>
         <nav> 
             <ul>
-                <a href="/timer">TIMER</a>
-                <a href="/home">HOME</a>
-                <a href="/garden">MY GARDEN</a>
+                <a href="/timer">TIMER</a> |
+                <a href="/home">HOME</a> |
+                <a href="/garden">MY GARDEN</a> |
                 <a href="/friends">MY FRIENDS</a>
             </ul>
         </nav>
