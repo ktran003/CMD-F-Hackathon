@@ -92,7 +92,7 @@ export default function CohereSummary(textToSummarize) {
     // console.log(summaryData?.summary);
     console.log(out.summary)
     return (
-        <div>
+        <div className="cohere-div">
             {out.summary}
         </div>
     )

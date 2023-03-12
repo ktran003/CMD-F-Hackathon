@@ -20,6 +20,8 @@ function App() {
     case "/garden":
       Component = MyGarden
       break
+    default:
+      Component = Home
   }
   return (
     <>
