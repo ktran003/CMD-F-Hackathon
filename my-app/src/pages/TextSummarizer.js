@@ -9,6 +9,7 @@ export default function TextSummarizer() {
         <h1>TextSummarizer</h1>
     <div>
         <UploadText></UploadText>
+        
     </div>
     <Link to="/Chatbox">
          <button class="moreButton">
